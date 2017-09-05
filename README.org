@@ -1,0 +1,1 @@
+Study notes and some sample code for SDL2 library (https://www.libsdl.org/).
