@@ -1,1 +1,15 @@
 Study notes and some sample code for SDL2 library (https://www.libsdl.org/).
+
+* Setup SDL environment on Mac
+There are three ways, I know, to setup SDL development enviornmrnt on Mac. Some of them are them
+is similar to Linux.
+
+- Install through =brew=
+- Install from source code
+- Install from the dmg file.
+
+* How to use the sample code
+Each =.c= file is an independent source file containing =main()= function. Using =make filename= to compile and
+link the source =filename.c=. The executable file =filename.out= will be generated.
+* Sample
+** Creating window

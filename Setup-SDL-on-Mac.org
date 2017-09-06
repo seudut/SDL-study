@@ -1,7 +1,0 @@
-There are three ways, I know, to setup SDL environment on Mac.
-
-* Install through =brew=
-
-* Install from source code
-
-* Install the framework dmg
