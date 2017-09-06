@@ -3,4 +3,4 @@ LDFLAGS = `sdl2-config --libs`
 CC = gcc
 
 %: %.c
-	$(CC) $(CFLAGS) $(LDFLAGS) $< -o "$@.out"
+	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@.out
