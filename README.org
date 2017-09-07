@@ -11,5 +11,19 @@ is similar to Linux.
 * How to use the sample code
 Each =.c= file is an independent source file containing =main()= function. Using =make filename= to compile and
 link the source =filename.c=. The executable file =filename.out= will be generated.
+
 * Sample
 ** Creating window
+#+BEGIN_SRC c
+  #include <SDL2/SDL.h>
+#+END_SRC
+
+#+BEGIN_SRC c
+  SDL_Init(SDL_INIT_VIDEO);
+  SDL_Quit();
+#+END_SRC
+
+#+BEGIN_SRC c
+  SDL_CreateWindow()
+  SDL_DestroyWindow()
+#+END_SRC
