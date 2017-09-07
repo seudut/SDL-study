@@ -12,6 +12,7 @@
 //
 // 2. To load image with the format of .jpg, it needs to install SDL2_image.
 // Use IMG_Load() instead of SDL_LoadBMP();
+// http://gigi.nullneuron.net/gigilabs/loading-images-in-sdl2-with-sdl_image/
 
 const int WINDOW_WIDTH = 640;
 const int WINDOW_HEIGHT = 480;
