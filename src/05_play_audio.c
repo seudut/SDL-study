@@ -8,6 +8,8 @@
  *      Mix_PlayMusic ()
  *      Mix_PauseMusic ()
  *      Mix_ResumeMusic ()
+ *      Mix_FreeMusic ()
+ *      Mix_CloseAudio ()
  *
  *  In this sample, press <SPACE> to start/stop the music playing.
  */
@@ -21,7 +23,7 @@ const int WINDOW_WIDTH = 640;
 const int WINDOW_HEIGHT = 480;
 const char* WINDOW_TITLE = "SDL Window - playing music";
 
-static const char *MUSIC_FILE = "test.wav";
+static const char *MUSIC_FILE = "../res/test.wav";
 
 int main (int argc, char *argv[])
 {
@@ -100,7 +102,10 @@ int main (int argc, char *argv[])
             }
         }
     }
-    Mix_FreeMusic(music);
+
+    Mix_FreeMusic(music); // Mix_LoadMUS()
+
+    Mix_CloseAudio (); // Mix_OpenAudio ()
 
     // Destory window
     SDL_DestroyWindow(window);
