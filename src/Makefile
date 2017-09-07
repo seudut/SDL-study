@@ -1,5 +1,5 @@
 CFLAGS = -Wall `sdl2-config --cflags`
-LDFLAGS = `sdl2-config --libs`
+LDFLAGS = `sdl2-config --libs` -lsdl2_mixer
 CC = gcc
 
 %: %.c
