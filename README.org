@@ -1,16 +1,38 @@
 Study notes and some sample code for SDL2 library (https://www.libsdl.org/).
 
-* Setup SDL environment on Mac
+* Setup SDL2 environment on Mac
 There are three ways, I know, to setup SDL development enviornmrnt on Mac. Some of them are them
 is similar to Linux.
 
 - Install through =brew=
-- Install from source code
+  Install the basic SDL2 library.
+  #+BEGIN_SRC sh
+  brew install sdl2
+  #+END_SRC
+  There are also some extensions of SDL2 in brew. Install them as you need.
+  - =sdl2_gfx= :: more drawing functions
+  - =sdl2_image= :: to load the image with more other format (.png, jpg ..)
+  - =sdl2_mixer= :: to play audio
+    To fix the error 
+    #+BEGIN_SRC sh
+          brew install sdl2_mixer --with-smpeg2
+    #+END_SRC
+  - =sdl2_ttf= :: 
+  - =sdl2_net=
+
+  After installed, use =sdl2-config= to get the information of headers and library location. =sdl2-config --cflags=,
+  =sdl2-config --libs=.
+               
 - Install from the dmg file.
+  Download the =dmg= file from https://www.libsdl.org/download-2.0.php. And copy the framework into =/Library/Framework/=
+
+- Install from source code
+  Refer the documentation https://wiki.libsdl.org/Installation.
+
 
 * How to use the sample code
-Each =.c= file is an independent source file containing =main()= function. Using =make filename= to compile and
-link the source =filename.c=. The executable file =filename.out= will be generated.
+Each =.c= file is an independent source file containing =main()= function. There is =Makefile= under =src=. Enter the
+=src= directory, and use =make filename= to compile and link the source =filename.c=. The executable file =filename.out= will be generated.
 
 * Sample
 ** Creating window

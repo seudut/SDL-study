@@ -1,5 +1,6 @@
 /*
  * 04_keyboard.c - Get the keyboard input, and print it on console.
+ *  Here is the document of all the key code https://wiki.libsdl.org/SDL_Keycode
  */
 
 #include <stdio.h>
